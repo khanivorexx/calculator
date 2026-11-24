@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <div class="box" style="max-width: 320px; margin: 40px auto">
+      <div class="title has-text-right" id="urdun">0</div>
+      <div class="fixed-grid has-4-cols">
+        <div class="grid">
+          <button class="button is-primary" onclick="getNumber(1)">1</button>
+          <button class="button is-primary" onclick="getNumber(2)">2</button>
+          <button class="button is-primary" onclick="getNumber(3)">3</button>
+          <button class="button is-primary" onclick="getAction('nemeh')">
+            +
+          </button>
+          <button class="button is-primary" onclick="getNumber(4)">4</button>
+          <button class="button is-primary" onclick="getNumber(5)">5</button>
+          <button class="button is-primary" onclick="getNumber(6)">6</button>
+          <button class="button is-primary" onclick="getAction('hasah')">
+            -
+          </button>
+          <button class="button is-primary" onclick="getNumber(7)">7</button>
+          <button class="button is-primary" onclick="getNumber(8)">8</button>
+          <button class="button is-primary" onclick="getNumber(9)">9</button>
+          <button class="button is-primary" onclick="tentsuu()">=</button>
+          <button class="button is-primary" onclick="getAction('urjih')">
+            *
+          </button>
+          <button class="button is-primary" onclick="getNumber(0)">0</button>
+          <button class="button is-primary" onclick="getAction('huvaah')">
+            /
+          </button>
+          <button class="button is-primary" onclick="reset()">C</button>
+        </div>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
